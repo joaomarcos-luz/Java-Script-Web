@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <button onclick="comprar()">Comprar Produto</button>
+
+    <script>
+       function comprar(){
+        let produto = window.prompt('Qual o produto? ')
+        let valor = Number(window.prompt(`qual o valor do ${produto}? `))
+        let pagou = Number(window.prompt(`qual o valor dado pra pagar o ${produto}? `))
+
+        troco = pagou - valor
+        
+        if (troco >= 0){
+            alert(`Voce comprou o ${produto} no valor de ${valor}. '\n' Voce deu ${pagou} em dinheiro e vai receber ${troco} de troco.`)
+        }else if (troco < 0) {
+            alert('COMPRA NÃO APROVADA')
+        }
+        }
+    </script>
+</body>
+</html>

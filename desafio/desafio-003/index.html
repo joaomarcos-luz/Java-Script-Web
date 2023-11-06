@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <button onclick="inicio()">Antecessor e Sucessor</button>
+    
+    <script>
+        function inicio(){
+        let n1 = Number(window.prompt('Digite um numero inteiro: '))
+        let msg1 = (`O Antecessor de ${n1} é ${n1 + -1}`)
+        let msg2 = (`O Sucessor de ${n1} é ${n1 + +1}`)
+        alert(msg1 + '\n' + msg2)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interagindo com a pagina</title>
+    <style>
+        button{
+            color: floralwhite;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados 2.0</h1>
+    <button onclick="inic()">Clique aqui</button>
+    <section name="res" id="res">
+        <p>aqui vai aparecer o resultado</p>
+    </section>
+        <script>
+           function inic() {
+            let nome = window.prompt('qual seu nome?')
+            let res = window.document.getElementById('res')
+            res.innerHTML = `Prazer em te conhecer <strong>${nome}</strong> &#9757;`
+           }
+        </script>
+</body>
+</html>

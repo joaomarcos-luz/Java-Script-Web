@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Calculando</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+        }
+        button{
+            color: whitesmoke;
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <H1>Soma de Numeros</H1>
+    <button onclick="inic()">clique para iniciar</button>
+    <section id="resp">
+
+    </section>
+    <script>
+        function inic(){
+        let n1 = Number(window.prompt('Digite um Numero: '))
+        let n2 = Number(window.prompt('Digite um Numero: '))
+        soma = n1 + n2
+        var res = document.getElementById('resp')
+        res.innerHTML = `<p>A soma de <mark>${n1}</mark> + <mark>${n2}</mark> = <strong>${soma}</strong> </p>`
+        }
+    </script>
+
+
+</body>
+</html>

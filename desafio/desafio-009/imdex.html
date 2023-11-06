@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Reajuste Salarial</H1>
+
+    <button onclick="inicio()">Reajuste Salarial</button>
+
+    <section id="re">
+        <p>Clique no Botáo acima para iniciar</p>
+    </section>
+
+    <script>
+        function inicio(){
+            let nome = prompt(`Qual o nome do Funcionario? `)
+            let salr = parseFloat(prompt(`Qual o valor do salário de ${nome}? `).replace(',','.'))
+            let prc = parseFloat(prompt(`O salário de ${nome} será reajustado em qual porcentagem (%)? `).replace(',','.'))
+
+            let alm = (salr * prc) / 100
+            let reaj = salr + alm
+
+            let res = document.getElementById('re')
+
+            res.innerHTML = `<h3><mark>${nome}</mark> recebel um almento salario</h3>`
+            res.innerHTML += `<p>O salario atual era <mark>R$${salr.toLocaleString('pt-BR')}</mark>.</p>`
+            res.innerHTML += `<p>Com o almento de <mark>${prc}%</mark>, o salario vai almentara <mark>${alm.toFixed(2)}</mark> no proximo mês.</p>` 
+            res.innerHTML += `<p>A partir dai, <mark>${nome}</mark> vai passar a ganhar <mark>R$${reaj.toFixed(2).toLocaleString('pt-BR')}</mark>.</p>`
+        }
+    </script>
+</body>
+</html>

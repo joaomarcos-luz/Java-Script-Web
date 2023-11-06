@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <button onclick="converte()">Converter</button>
+    <button onclick="rein()">Reiniciar</button>
+    <section id="resp">
+        <p>Clique no botão Converter para iniciar</p>
+    </section>
+
+    <script>
+        function converte(){
+            let valor = Number(window.prompt('Qual o valor deseja converter? '))
+            let res = document.getElementById('resp')
+
+            res.innerHTML = `<h3>A distancia de ${valor} metros, corresponde a...</h3>`
+
+            let km = valor / 1000
+            res.innerHTML += `<p>${valor} Kilometros ${km} (Km).</p>`
+
+            let hm = valor / 100
+            res.innerHTML += `<p>${valor} Hectômetros ${hm} (Hm).</p>`
+
+            let dam = valor / 10
+            res.innerHTML += `<p>${valor} Decâmetros ${dam} (Dam).</p>`
+
+            let dm = valor * 10
+            res.innerHTML += `<p>${valor} Decimetro ${dm} (dm).</p>`
+
+            let cm = valor * 100
+            res.innerHTML += `<p>${valor} Centimetro ${cm} (cm).</p>`
+
+            let mm = valor * 1000
+            res.innerHTML += `<p>${valor} Milimetro ${mm} (mm).</p>`
+        }
+
+        function rein(){
+            let res1 = document.getElementById('resp')
+            res1.innerHTML += '<p>Clique no botão Converter para iniciar</p>'
+        }
+    </script>
+</body>
+</html>

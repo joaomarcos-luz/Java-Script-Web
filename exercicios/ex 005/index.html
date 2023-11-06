@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculando</title>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <button onclick="inic()">Clque para calcular</button>
+    <section class="respt">
+        <p>Resposta</p>
+    </section>
+    <script>
+        window.alert('Bem vindo ao meu site!')
+        function inic(){
+            let n1 = Number(window.prompt('Digite um numero:'))
+            let res = document.querySelector('section.respt')
+            res.innerHTML = `Voce escolheu o numero: ${n1}, o dobro e ${n1*2}, e a metade e ${n1/2} !`
+        }
+    </script>
+</body>
+</html>

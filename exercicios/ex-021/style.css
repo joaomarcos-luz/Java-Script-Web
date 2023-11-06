@@ -1,0 +1,25 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+  @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+
+body{
+    background-color: rgb(213, 183, 242);
+    font: 15px arial;
+    text-align: center;
+}
+
+h1, h2, h3{
+    font-family: 'Lobster', cursive;
+}
+
+button{
+    background-color: blueviolet;
+    font-family: 'Pacifico', cursive;
+    padding: 10px;
+    font: 20px;
+    color: white;
+}
+
+

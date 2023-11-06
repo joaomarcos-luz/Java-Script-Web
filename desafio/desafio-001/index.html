@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #efe2e2;
+        }
+        input{
+            width: 100;
+            height: 100px;
+            color: rgba(249, 216, 216, 0.979);
+            font-weight: bolder;
+            background-color: red;
+        }
+        input:hover{
+            background-color: grey;
+        }
+        input:active{
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Escolha um Botão</h1>
+
+    <input type="button" value="Botão01" onclick="resp1()" class="bt01"></input>
+    <input type="button" value="Botão02" onclick="resp2()" class="bt02"></input>
+    <input type="button" value="Botão03" onclick="resp3()" class="bt03"></input>
+
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function resp1() {
+            var clik1 = document.querySelector('.bt01').value
+            var resp = document.querySelector('#res')
+            alert(`Você escolheu o ${clik1}`)
+        }
+
+        function resp2(){
+            var clik2 = document.querySelector('.bt02').value
+            var resp = document.querySelector('#res')
+            alert(`Você escolheu o ${clik2}`)
+        }
+        
+        function resp3(){
+            var clik3 = document.querySelector('.bt03').value
+            var resp = document.querySelector('#res')
+            alert(`Você escolheu o ${clik3}`)
+        }
+    </script>
+
+</body>
+</html>

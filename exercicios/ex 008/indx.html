@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos em Js</title>
+</head>
+<body>
+    <h1>Calculos em JavaScript</h1>
+    <button onclick="inc()">Iniciar</button>
+    <section id="resp">
+        <p></p>
+    </section>
+
+    <script>
+        function inc(){
+            let n1 = Number(window.prompt('Digite um Numero: '))
+            let res = document.querySelector('section#resp')
+
+        res.innerHTML = `<p>O numero a ser analisado sera o <strong>${n1}</strong></p>` 
+        res.innerHTML += `<p>O seu valor absoluto e ${Math.abs(n1)}</p>`   
+        res.innerHTML += `<p>O seu valor inteiro e ${Math.trunc(n1)}</p>` 
+        res.innerHTML += `<p>O numero inteiro mais proximo ${Math.round(n1)}</p>`  
+        res.innerHTML += `<p>O valor de sua raiz quadrada e ${Math.sqrt(n1)}</p>` 
+        res.innerHTML += `<p>O valor de sua raiz cubica e ${Math.cbrt(n1)}</p>` 
+        res.innerHTML += `<p>O valor de ${n1} <sup>2</sup> e ${Math.pow(n1 ,2)}</p>` 
+        res.innerHTML += `<p>O valor de ${n1} <sup>3</sup> e ${Math.pow(n1 ,3)}</p>` 
+        }
+    </script>
+</body>
+</html>

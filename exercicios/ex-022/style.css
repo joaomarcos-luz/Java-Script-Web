@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body { 
+    font: 12pt Arial; 
+    text-align: center;
+    background-color: rgb(225, 225, 239);
+}
+
+h1, h2, h3 { 
+    font-family: 'Pacifico', cursive; 
+    font-weight: normal;
+}
+
+button { 
+    font-family: 'Anton', cursive;
+    font-size: 12pt; 
+    padding: 20px; 
+    margin: 0px 0px 25px 0px; 
+    background-color: rgb(148, 148, 255);
+}
+
+button:hover{
+    background-color: blue;
+}
+

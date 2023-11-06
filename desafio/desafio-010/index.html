@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: red;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resolvendo Bhaskara</h1>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <section id="resp">
+        <p>Consieran uma equação no formato <strong>ax</strong>²<strong>+ bx + c </strong>= 0, aperte o botão acima para calcular o valor de ▲.</p>
+    </section>
+
+    <script>
+        function calcular(){
+            let a = parseFloat(prompt('Qual o valor de a?').replace(',','.'))
+            let b = parseFloat(prompt('Qual o valor de b?').replace(',','.'))
+            let c = parseFloat(prompt('Qual o valor de c?').replace(',','.'))
+
+            let res = document.querySelector('section#resp')
+
+           let discriminante = b * b - 4 * a * c;
+
+            // Calcula as raízes
+            let raiz1 = (-b + Math.sqrt(discriminante)) / (2 * a);
+            let raiz2 = (-b - Math.sqrt(discriminante)) / (2 * a);
+
+            res.innerHTML = `<h2>Resolvendo Bhaskara</h2>`;
+            res.innerHTML += `<p>A equação atual é <mark><strong>${a}x² + ${b}x + ${c} = 0</strong></mark></p>`;
+            res.innerHTML += `<p>O cálculo realizado será ▲ = <mark><strong>${b}² - 4 . ${a} . ${c}</strong></mark></p>`
+            res.innerHTML += `<p>O cálculo realizado foi ▲ = <mark><strong>${discriminante}</strong></mark></p>`;
+            res.innerHTML += `<p>As raízes são: x1 = <mark><strong>${raiz1.toFixed(2)}</strong> e x2 = <strong>${raiz2.toFixed(2)}</strong></mark></p>`;
+            }
+</script>
+</body>
+</html>

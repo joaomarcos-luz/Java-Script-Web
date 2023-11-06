@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Calcular Desconto</h1>
+
+    <button onclick="inicio()">Desconto</button>
+
+    <section id="resp">
+        <p>Clique no botão acima para iniciar</p>
+    </section>
+
+    <script>
+
+        function inicio(){
+        let prod = prompt('Qual produto você está comprando? ')
+        let valor = prompt(`Qual o valor do ${prod}, que voce está comprando? `)
+        let dsc = prompt(`Qual o valor do desconto do ${prod}? `)
+        let valort = parseFloat(valor.replace(',','.'))
+        let desc = parseFloat(dsc.replace(',','.'))
+
+        let valors = (valort * desc) / 100
+        let valord = valort - valors
+
+        let res = document.getElementById('resp')
+
+        res.innerHTML = `<h3>Calculando desconto de <mark>${desc}%</mark> para <mark>${prod}</mark>.</h3>`
+        res.innerHTML += `<p>O preço original era <mark>R${valort}</mark>.</p>`
+        res.innerHTML += `<p>Você acaba de ganhar <mark>R$${valors}</mark>, de desconto.</p>`
+        res.innerHTML += `<p>No fim Você vai pargar <mark>R$${valord}</mark>, no produto <mark>${prod}</mark>.</p>`
+        }
+        
+    </script>
+</body>
+</html>

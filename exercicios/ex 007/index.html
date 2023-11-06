@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:active{
+            background-color: blue;
+        }
+        button:hover{
+            background-color: red;
+        }
+        h1{
+            border: 1px solid red ;
+            padding: 2px;
+            margin: 5px;
+            outline: 3px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Media de Nota 1.0</h1>
+    <button onclick="inicio()">Cinque pra inicia</button>
+    <section id="resutado">
+        <P></P>
+    </section>
+
+    <script>
+        function inicio() {
+            let nome = window.prompt('Qual o nome do aluno?')
+            let n1 = Number(window.prompt(`qual a primeira nota de ${nome}?`))
+            let n2 = Number(window.prompt(`qual a segunda nota de ${nome}?`))
+            med = (n1 + n2)/2
+
+            let res = document.getElementById('resutado')
+            res.innerHTML = `<p>A primeira nota foi <mark>${n1}</mark></p>`
+            res.innerHTML += `<p>A primeira nota foi <mark>${n2}</mark></p>`
+            res.innerHTML += `,<p>A Media do aluno <mark>${nome}</mark> foi <mark>${med}</mark> </p>`
+        }
+    </script>
+</body>
+</html>

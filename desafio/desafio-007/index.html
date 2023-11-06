@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<H1>Conversor de R$ &rarr; UR$ </H1>
+<button onclick="converte()">Converte</button>
+<section id="resp">
+    <h3>Clique no Botão acima para iniciar</h3>
+</section>
+
+<script>
+
+function converte(){
+    let ur = prompt('Qual o valor atual do Dolar(UR$)? ')
+    let rs = prompt('Qual o valor voce quer converte? ')
+    let valor = rs * ur
+
+    let res = document.getElementById('resp')
+    res.innerHTML = `<h3>O valor (R$)${rs}, convertido em (UR$)${ur}. da um total de (Ur$)<strong>${valor}</strong>. </h3>`
+}
+
+</script>
+</body>
+</html>
