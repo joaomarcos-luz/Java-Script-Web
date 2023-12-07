@@ -1,0 +1,32 @@
+@font-face {
+    font-family:'Permanent Marker';
+    src: url(font/PermanentMarker-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+section{
+    text-align: center;
+    
+}
+
+body{
+    background-image: url(imagem/osteguna.jpg);
+
+    font-family: 'Permanent Marker', sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.94);
+}
+
+section > button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bolder;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
