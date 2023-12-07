@@ -28,6 +28,7 @@ section > h1{
 }
 
 section > p{
+    margin-top: auto;
     font-size: 3vw;
 }
 
@@ -38,11 +39,11 @@ section > button{
     font-weight: bolder;
     border-radius: 5px;
     color: white;
-    padding: 10px;
+    padding: 7px;
     font-size: 17px;
     margin-top: 20px;
-    margin-bottom: 35px;
-    font-size: 2vw;
+    margin-bottom: 30px;
+    font-size: 2.5vw;
 }
 
 section > button:hover{
