@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagem/unnamed.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+header{
+    font-family: 'Lemon', serif;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+main{
+    background-color: rgba(0, 0, 0, 0.607);
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    width: 400px;
+}
+input{
+    padding: 5px;
+}
+#botao{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Lemon', serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+#botao:hover{
+    background-color: grey;
+}
+footer{
+    font-family: 'Lemon', serif;
+    font-weight: bold;
+    padding-top: 80px;
+}
