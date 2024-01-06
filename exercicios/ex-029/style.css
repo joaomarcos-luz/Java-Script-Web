@@ -8,12 +8,12 @@ body{
     font-size: 16px;
     text-align: center;
     color: white;
-    padding-top: 30px;
 }
 header{
     font-family: 'Lemon', serif;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 22px;
 }
 main{
     background-color: rgba(0, 0, 0, 0.607);
@@ -25,19 +25,28 @@ main{
 input{
     padding: 5px;
 }
-#botao{
+.botao{
     padding: 10px;
-    background-color: black;
+    background-color: rgba(128, 128, 128, 0.426);
     color: white;
     font-family: 'Lemon', serif;
     font-weight: bold;
     font-size: 18px;
 }
-#botao:hover{
-    background-color: grey;
+.botao:hover{
+    background-color: rgba(0, 0, 0, 0.796);
+}
+.txt{
+    background-color: rgba(128, 128, 128, 0.426);
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bolder;
 }
 footer{
     font-family: 'Lemon', serif;
     font-weight: bold;
-    padding-top: 80px;
+    padding-top: 90px;
+}
+#link{
+    color: white;
 }
